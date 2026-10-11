@@ -1,17 +1,23 @@
 ---
 version: alpha
 name: Open Source Accessibility Summit 2026
-description: High-contrast, accessible brand system featuring Carbon Black, Graphite, Tuscan Sun gold, and architectural line geometry.
+description: High-contrast, accessible brand system featuring Graphite canvas, Carbon Black surface containers, Tuscan Sun gold accents, and sharp geometric patterns.
 colors:
-  canvas: "#212121"
-  surface: "#303030"
+  canvas: "#303030"
+  surface: "#212121"
+  surface-secondary: "#303030"
   surface-light: "#C2C2C2"
+  surface-accent: "#EBC45E"
   primary: "#EBC45E"
   secondary: "#C2C2C2"
   on-canvas: "#FFFFFF"
   on-surface: "#FFFFFF"
+  on-surface-light: "#212121"
   on-primary: "#212121"
-  border: "#303030"
+  text-primary: "#FFFFFF"
+  text-secondary: "#C2C2C2"
+  text-dark: "#212121"
+  border-secondary: "#C2C2C2"
   border-accent: "#EBC45E"
 typography:
   display:
@@ -19,17 +25,24 @@ typography:
     fontWeight: 700
     letterSpacing: "0.02em"
     textTransform: "uppercase"
+    color: "{colors.text-primary}"
   heading:
     fontFamily: "Lexend, sans-serif"
     fontWeight: 600
+    color: "{colors.text-primary}"
   subtitle:
     fontFamily: "Lexend, sans-serif"
     fontWeight: 500
-    color: "#EBC45E"
+    color: "{colors.primary}"
   body:
     fontFamily: "Arial, sans-serif"
     fontWeight: 400
     lineHeight: 1.6
+    color: "{colors.text-primary}"
+  caption:
+    fontFamily: "Arial, sans-serif"
+    fontWeight: 400
+    color: "{colors.text-secondary}"
 rounded:
   sm: "4px"
   md: "8px"
@@ -50,12 +63,27 @@ components:
   button-secondary:
     backgroundColor: "{colors.surface}"
     textColor: "{colors.on-surface}"
-    borderColor: "{colors.secondary}"
+    borderColor: "{colors.border-secondary}"
     rounded: "{rounded.md}"
-  card:
+  card-graphite-page:
     backgroundColor: "{colors.surface}"
-    borderColor: "{colors.border}"
     rounded: "{rounded.lg}"
+    padding: "{spacing.lg}"
+  card-carbon-page:
+    backgroundColor: "{colors.surface-secondary}"
+    rounded: "{rounded.lg}"
+    padding: "{spacing.lg}"
+  badge-container-light:
+    backgroundColor: "{colors.surface-light}"
+    textColor: "{colors.text-dark}"
+    rounded: "{rounded.lg}"
+  badge-container-bold:
+    backgroundColor: "{colors.surface-accent}"
+    textColor: "{colors.text-dark}"
+    rounded: "{rounded.lg}"
+  input:
+    backgroundColor: "{colors.surface}"
+    focusBorderColor: "{colors.primary}"
 ---
 
 # Design System: Open Source Accessibility Summit 2026 (OSA 26)
@@ -115,7 +143,7 @@ The visual language is characterized by sharp, geometric features: crisp 119° d
   - Border Radius: `16px` (`rounded.lg`)
   - Padding: `24px` (`spacing.lg`)
 - **Standard Card on Graphite Page:**
-  - Background: `#212121 (Carbon Black)
+  - Background: `#212121` (Carbon Black)
   - Border Radius: `16px` (`rounded.lg`)
   - Padding: `24px` (`spacing.lg`)
 - **Inverted / Light Badge Container:**
@@ -123,7 +151,7 @@ The visual language is characterized by sharp, geometric features: crisp 119° d
   - Content / Icon: `#212121` (Carbon Black)
   - Border Radius: `16px`
 - **Bold Badge Container:**
-  - Background: `#EBC45E (Tuscan Sun)
+  - Background: `#EBC45E` (Tuscan Sun)
   - Content / Icon: `#212121` (Carbon Black)
   - Border Radius: `16px` (`rounded.lg`)
 
