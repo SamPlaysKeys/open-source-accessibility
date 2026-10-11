@@ -19,7 +19,7 @@ Goals of the summit are to:
 
 Register for the [Open Source Accessibility Summit - 2026](https://2026.allthingsopen.org/open-source-accessibility-summit) happening on October 19, 2026 in Raleigh, NC.
 
-Learn more details about the event.
+Learn more in the [2026 Summit overview](/2026%20Open%20Source%20Accessibility%20Summit/open-source-accessibility-summit-2026.md), review [sponsorship opportunities](/2026%20Open%20Source%20Accessibility%20Summit/sponsorships.md), inspect the visual [Brand Board](/2026%20Open%20Source%20Accessibility%20Summit/OSA%2026%20Brand%20Board.png), and check out the [Design System & Brand Guidelines (DESIGN.md)](DESIGN.md) for visual identity specifications, design tokens, and Google Stitch UI generation prompts.
 
 ## Open Source Accessibility Summit - 2025 Recap
 Review what came out of the [inaugural Open Source Accessibility Summit (2025)](/2025%20Open%20Source%20Accessibility%20Summit/2025-recap.md) on Oct 12, 2025. 
