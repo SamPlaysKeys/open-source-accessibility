@@ -83,6 +83,9 @@ components:
     rounded: "{rounded.lg}"
   input:
     backgroundColor: "{colors.surface}"
+    textColor: "{colors.text-primary}"
+    borderColor: "{colors.surface-secondary}"
+    rounded: "{rounded.md}"
     focusBorderColor: "{colors.primary}"
 ---
 
@@ -92,7 +95,7 @@ components:
 
 The Open Source Accessibility Summit 2026 design system builds on intentional structure and clarity to ensure accessible, inclusive products. Rich **Graphite** backgrounds with subtle elevated **Carbon Black** texture provide a dark interface that reduces visual fatigue while maintaining rigorous WCAG AAA contrast compliance. **Tuscan Sun** gold draws the eyes and serves as the primary color for buttons, accents, and key information.
 
-The visual language is characterized by sharp, geometric features: crisp 119° diagonal stripes inspired by the summit emblem and offset double horizontal divider lines. The atmosphere feel technical, purposeful, and minimalist.  
+The visual language is characterized by sharp, geometric features: crisp 119° diagonal stripes inspired by the summit emblem and offset double horizontal divider lines. The atmosphere feels technical, purposeful, and minimalist.  
 
 ---
 
@@ -111,8 +114,8 @@ The visual language is characterized by sharp, geometric features: crisp 119° d
 ## 3. Typography Rules
 
 ### Font Families
-- **Display & Headings:** `Lexend` (Google Font engineered specifically to improve reading proficiency, reduce visual crowding, and maximize cognitive accessibility).
-- **Body & Subtitles:** `Arial` (Universal, clean, high-legibility sans-serif standard with open counters and distinct character differentiation).
+- **Display / Subtitles / Headings:** `Lexend` (Google Font engineered specifically to improve reading proficiency, reduce visual crowding, and maximize cognitive accessibility).
+- **Body: `Arial` (Universal, clean, high-legibility sans-serif standard with open counters and distinct character differentiation).
 
 ### Hierarchy & Stylings
 - **H1 / Page Titles:** `Lexend`, 700 Bold or 800 ExtraBold, uppercase, color: `#FFFFFF`. Often paired with the signature offset horizontal underline.
@@ -156,7 +159,10 @@ The visual language is characterized by sharp, geometric features: crisp 119° d
   - Border Radius: `16px` (`rounded.lg`)
 
 ### Inputs & Forms
-- Background: `#212121`
+- Background: `#212121` (Carbon Black)
+- Text: `#FFFFFF` (White)
+- Border: `1px solid #303030` (Graphite)
+- Border Radius: `8px` (`rounded.md`)
 - Active / Focus: `2px solid #EBC45E` with `2px` focus ring offset
 - Placeholder: `#C2C2C2` at 60% opacity
 
@@ -181,4 +187,25 @@ The visual language is characterized by sharp, geometric features: crisp 119° d
 ### 3. Grid & Spacing Strategy
 - **Base Grid:** 8px baseline grid (`8px`, `16px`, `24px`, `32px`, `48px`).
 - **Whitespace:** Generous spacing around text blocks to enhance legibility and screen reader navigation boundaries.
+
+---
+
+## 6. Design System Notes for Stitch Generation
+
+*Include this block in prompts when generating screens and components with Google Stitch:*
+
+```markdown
+**DESIGN SYSTEM (REQUIRED):**
+- Platform: Web (Desktop & Mobile responsive)
+- Theme: Dark Mode, High-Contrast Accessible Design
+- Base Canvas: Graphite (#303030)
+- Surface / Cards: Carbon Black (#212121), border-radius 16px
+- Primary Accent: Tuscan Sun (#EBC45E)
+- Secondary Accent / Neutral: Silver (#C2C2C2)
+- Text Primary: White (#FFFFFF)
+- Text Secondary: Silver (#C2C2C2)
+- Typography: Display/Headers in 'Lexend', Body/Subtitles in 'Arial'
+- Graphic Accents: 119° diagonal parallel stripes (line width equals line spacing); offset double horizontal divider lines (ratio 5:15:1)
+- Accessibility: WCAG AAA compliance, high-visibility focus indicators, minimum 16px body text
+```
 
